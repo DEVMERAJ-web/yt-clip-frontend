@@ -7,15 +7,6 @@ export default function Home() {
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
 
-  function generate() {
-    if (!url || !start || !end) {
-      alert("Fill all fields");
-      return;
-    }
-
-    alert("Clip request ready (backend later)");
-  }
-
   return (
     <main style={{ padding: 40 }}>
       <h1>YouTube Clip Cutter</h1>
@@ -44,7 +35,7 @@ export default function Home() {
 
       <br /><br />
 
-      <button onClick={generate}>
+      <button onClick={() => alert("Working!")}>
         Generate Clip
       </button>
     </main>
